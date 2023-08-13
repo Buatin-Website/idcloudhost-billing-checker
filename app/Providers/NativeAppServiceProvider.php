@@ -15,6 +15,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
     public function boot(): void
     {
         MenuBar::create()
+            ->icon(storage_path('app/menuBarIconTemplate.png'))
             ->withContextMenu(
                 Menu::new()
                     ->link('https://twitter.com/andreas_asatera', 'Contact Us')
