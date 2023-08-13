@@ -11,6 +11,7 @@ class ConfigureController extends Controller
     {
         $data = [
             'api_key' => $generalSettings->api_key,
+            'balance_threshold' => $generalSettings->balance_threshold,
         ];
 
         return view('configure', $data);

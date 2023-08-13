@@ -49,6 +49,13 @@ class GetBillingAccountList extends Request implements Cacheable
         ];
     }
 
+    protected function defaultConfig(): array
+    {
+        return [
+            'verify' => false,
+        ];
+    }
+
     public function resolveCacheDriver(): LaravelCacheDriver
     {
         return new LaravelCacheDriver(Cache::store('file'));

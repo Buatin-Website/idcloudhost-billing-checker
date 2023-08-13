@@ -10,6 +10,7 @@ class StoreConfigurationRequest extends FormRequest
     {
         return [
             'api_key' => ['required', 'string'],
+            'balance_threshold' => ['required', 'numeric', 'min:0'],
         ];
     }
 

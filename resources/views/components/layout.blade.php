@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="min-h-screen">
-<div class="flex flex-col justify-between min-h-screen">
+<div class="flex flex-col min-h-screen">
     <div class="navbar bg-base-100">
         <div class="navbar-start">
         <a href="{{ route('home') }}" class="btn btn-ghost normal-case text-xl">{{ $app_name }}</a>
@@ -30,7 +30,7 @@
         </div>
     @endif
 
-    <div class="p-4">
+    <div class="px-6 mb-auto">
         {{ $slot }}
     </div>
 
