@@ -4,9 +4,11 @@ namespace App\Providers;
 
 use App\Events\AccountThresholdReachedEvent;
 use App\Listeners\AccountThresholdReachedListener;
+use App\Listeners\ApplicationBootedListener;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Native\Laravel\Events\App\ApplicationBooted;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -21,6 +23,9 @@ class EventServiceProvider extends ServiceProvider
         ],
         AccountThresholdReachedEvent::class => [
             AccountThresholdReachedListener::class,
+        ],
+        ApplicationBooted::class => [
+            ApplicationBootedListener::class,
         ],
     ];
 
