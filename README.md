@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/Buatin-Website/idcloudhost-billing-checker">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+    <img src="logo.png" alt="Logo">
   </a>
 
 <h3 align="center">IDCloudhost Billing Checker</h3>
@@ -22,11 +22,8 @@
 * [Getting Started](#getting-started)
     * [Prerequisites](#prerequisites)
     * [Installation](#installation)
-* [Usage](#usage)
 * [Contributing](#contributing)
 * [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
