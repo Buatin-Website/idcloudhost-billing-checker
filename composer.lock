@@ -4,8 +4,154 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f396510c7eef1c549b45608d897cd6b5",
+    "content-hash": "eac41c444856b4e733c567dde744ea8e",
     "packages": [
+        {
+            "name": "blade-ui-kit/blade-heroicons",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
+                "reference": "f756c807b0d04afd2caf7079bac26492da9cc6d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/f756c807b0d04afd2caf7079bac26492da9cc6d4",
+                "reference": "f756c807b0d04afd2caf7079bac26492da9cc6d4",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^9.0|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeUI\\Heroicons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-heroicons",
+            "keywords": [
+                "Heroicons",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-heroicons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/caneco",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-01-11T08:38:22+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-icons",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-icons.git",
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/4d6b6b2548b1994a777211a985e18691701891e4",
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0|^10.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "illuminate/view": "^8.0|^9.0|^10.0",
+                "php": "^7.4|^8.0",
+                "symfony/console": "^5.3|^6.0",
+                "symfony/finder": "^5.3|^6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "bin": [
+                "bin/blade-icons-generate"
+            ],
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Icons\\BladeIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BladeUI\\Icons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of icons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-icons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-icons"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-09T15:47:26+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -135,6 +281,53 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.2"
             },
             "time": "2022-10-27T11:44:00+00:00"
+        },
+        {
+            "name": "doctrine/deprecations",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/deprecations.git",
+                "reference": "612a3ee5ab0d5dd97b7cf3874a6efe24325efac3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
+                "reference": "612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^9",
+                "phpstan/phpstan": "1.4.10 || 1.10.15",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
+                "psalm/plugin-phpunit": "0.18.4",
+                "psr/log": "^1 || ^2 || ^3",
+                "vimeo/psalm": "4.30.0 || 5.12.0"
+            },
+            "suggest": {
+                "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Deprecations\\": "lib/Doctrine/Deprecations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
+            "homepage": "https://www.doctrine-project.org/",
+            "support": {
+                "issues": "https://github.com/doctrine/deprecations/issues",
+                "source": "https://github.com/doctrine/deprecations/tree/v1.1.1"
+            },
+            "time": "2023-06-03T09:27:29+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1809,6 +2002,79 @@
             "time": "2023-08-05T12:09:49+00:00"
         },
         {
+            "name": "livewire/livewire",
+            "version": "v3.0.0-beta.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "888c869df2c886c603ffafa7b70240891dbc56ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/888c869df2c886c603ffafa7b70240891dbc56ed",
+                "reference": "888c869df2c886c603ffafa7b70240891dbc56ed",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/http-kernel": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.0|^11.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^7.0|^8.0",
+                "orchestra/testbench-dusk": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.0",
+                "psy/psysh": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.0.0-beta.8"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-08T19:03:42+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.4.0",
             "source": {
@@ -1908,6 +2174,205 @@
                 }
             ],
             "time": "2023-06-21T08:46:11+00:00"
+        },
+        {
+            "name": "nativephp/electron",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NativePHP/electron.git",
+                "reference": "d9bc645328148dfa334968ede4388b59d50abd56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NativePHP/electron/zipball/d9bc645328148dfa334968ede4388b59d50abd56",
+                "reference": "d9bc645328148dfa334968ede4388b59d50abd56",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0",
+                "laravel/prompts": "^0.1.1",
+                "nativephp/laravel": "*",
+                "nativephp/php-bin": "*",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Native\\Electron\\ElectronServiceProvider"
+                    ],
+                    "aliases": {
+                        "Updater": "Native\\Electron\\Facades\\Updater"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Native\\Electron\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Electron wrapper for the NativePHP framework.",
+            "homepage": "https://github.com/nativephp/electron",
+            "keywords": [
+                "electron",
+                "laravel",
+                "nativephp"
+            ],
+            "support": {
+                "source": "https://github.com/NativePHP/electron/tree/0.4.0"
+            },
+            "time": "2023-08-09T20:58:06+00:00"
+        },
+        {
+            "name": "nativephp/laravel",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NativePHP/laravel.git",
+                "reference": "8d405f45b1c0858cbe11b94fa9ef3326b8c5c458"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NativePHP/laravel/zipball/8d405f45b1c0858cbe11b94fa9ef3326b8c5c458",
+                "reference": "8d405f45b1c0858cbe11b94fa9ef3326b8c5c458",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.0",
+                "symfony/finder": "^6.2"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.0",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Native\\Laravel\\NativeServiceProvider"
+                    ],
+                    "aliases": {
+                        "ContextMenu": "Native\\Laravel\\Facades\\ContextMenu",
+                        "Dock": "Native\\Laravel\\Facades\\Dock",
+                        "Process": "Native\\Laravel\\Facades\\Process",
+                        "Window": "Native\\Laravel\\Facades\\Window",
+                        "Clipboard": "Native\\Laravel\\Facades\\Clipboard"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Native\\Laravel\\": "src/",
+                    "Native\\Laravel\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel wrapper for the NativePHP framework.",
+            "homepage": "https://github.com/nativephp/laravel",
+            "keywords": [
+                "laravel",
+                "nativephp",
+                "nativephp-laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/NativePHP/laravel/issues",
+                "source": "https://github.com/NativePHP/laravel/tree/0.4.0"
+            },
+            "time": "2023-08-09T20:44:37+00:00"
+        },
+        {
+            "name": "nativephp/php-bin",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NativePHP/php-bin.git",
+                "reference": "36fec9027b2be29d1a5d1aa83baf6d8030da66e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NativePHP/php-bin/zipball/36fec9027b2be29d1a5d1aa83baf6d8030da66e9",
+                "reference": "36fec9027b2be29d1a5d1aa83baf6d8030da66e9",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0",
+                "GPL-3.0-or-later",
+                "MIT",
+                "PHP-3.01"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Simon Hamp",
+                    "email": "simon.hamp@me.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP binaries used by the NativePHP framework",
+            "homepage": "https://nativephp.com",
+            "keywords": [
+                "nativephp",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/NativePHP/php-bin/issues",
+                "source": "https://github.com/NativePHP/php-bin/tree/0.3.0"
+            },
+            "time": "2023-07-27T10:44:16+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2303,6 +2768,117 @@
             "time": "2023-02-08T01:06:31+00:00"
         },
         {
+            "name": "phpdocumentor/reflection-common",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "opensource@ijaap.nl"
+                }
+            ],
+            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
+            "homepage": "http://www.phpdoc.org",
+            "keywords": [
+                "FQSEN",
+                "phpDocumentor",
+                "phpdoc",
+                "reflection",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
+            },
+            "time": "2020-06-27T09:03:43+00:00"
+        },
+        {
+            "name": "phpdocumentor/type-resolver",
+            "version": "1.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/TypeResolver.git",
+                "reference": "3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419",
+                "reference": "3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/deprecations": "^1.0",
+                "php": "^7.4 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.0",
+                "phpstan/phpdoc-parser": "^1.13"
+            },
+            "require-dev": {
+                "ext-tokenizer": "*",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpunit/phpunit": "^9.5",
+                "rector/rector": "^0.13.9",
+                "vimeo/psalm": "^4.25"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                }
+            ],
+            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.3"
+            },
+            "time": "2023-08-12T11:01:26+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.9.1",
             "source": {
@@ -2376,6 +2952,53 @@
                 }
             ],
             "time": "2023-02-25T19:38:58+00:00"
+        },
+        {
+            "name": "phpstan/phpdoc-parser",
+            "version": "1.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpdoc-parser.git",
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^2.0",
+                "nikic/php-parser": "^4.15",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.5",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "symfony/process": "^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\PhpDocParser\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPDoc parser with support for nullable, intersection and generic types",
+            "support": {
+                "issues": "https://github.com/phpstan/phpdoc-parser/issues",
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.1"
+            },
+            "time": "2023-08-03T16:32:59+00:00"
         },
         {
             "name": "psr/container",
@@ -3041,6 +3664,460 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "saloonphp/cache-plugin",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saloonphp/cache-plugin.git",
+                "reference": "cba27ba48cc1bec359bd1353c7b6a8998cee94ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saloonphp/cache-plugin/zipball/cba27ba48cc1bec359bd1353c7b6a8998cee94ea",
+                "reference": "cba27ba48cc1bec359bd1353c7b6a8998cee94ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "saloonphp/saloon": "^2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "league/flysystem": "^3.12.2",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.3",
+                "psr/simple-cache": "^3.0",
+                "spatie/ray": "^1.34.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Saloon\\CachePlugin\\": "src/",
+                    "Saloon\\CachePlugin\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sammyjo20",
+                    "email": "29132017+Sammyjo20@users.noreply.github.com"
+                }
+            ],
+            "description": "Official plugin for caching Saloon responses",
+            "support": {
+                "issues": "https://github.com/saloonphp/cache-plugin/issues",
+                "source": "https://github.com/saloonphp/cache-plugin/tree/v2.3.1"
+            },
+            "time": "2023-08-10T17:48:38+00:00"
+        },
+        {
+            "name": "saloonphp/laravel-http-sender",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saloonphp/laravel-http-sender.git",
+                "reference": "92da75985dc213aa75fe38749f737b2acad78074"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saloonphp/laravel-http-sender/zipball/92da75985dc213aa75fe38749f737b2acad78074",
+                "reference": "92da75985dc213aa75fe38749f737b2acad78074",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "^9.0 || ^10.0",
+                "php": "^8.1",
+                "saloonphp/saloon": "^2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.5",
+                "orchestra/testbench": "^7.7 || ^8.0",
+                "pestphp/pest": "^1.21",
+                "phpstan/phpstan": "^1.9",
+                "spatie/ray": "^1.33"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Saloon\\HttpSender\\": "src/",
+                    "Saloon\\HttpSender\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Carré",
+                    "email": "29132017+Sammyjo20@users.noreply.github.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel HTTP Client Sender for Saloon v2+",
+            "homepage": "https://github.com/sammyjo20",
+            "support": {
+                "issues": "https://github.com/saloonphp/laravel-http-sender/issues",
+                "source": "https://github.com/saloonphp/laravel-http-sender/tree/v1.2.1"
+            },
+            "time": "2023-08-10T17:28:54+00:00"
+        },
+        {
+            "name": "saloonphp/laravel-plugin",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saloonphp/laravel-plugin.git",
+                "reference": "57e601583334f295244e91381b7b345d05d7d46c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saloonphp/laravel-plugin/zipball/57e601583334f295244e91381b7b345d05d7d46c",
+                "reference": "57e601583334f295244e91381b7b345d05d7d46c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.0 || ^10.0",
+                "illuminate/http": "^9.0 || ^10.0",
+                "illuminate/support": "^9.0 || ^10.0",
+                "php": "^8.1",
+                "saloonphp/saloon": "^2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.5",
+                "orchestra/testbench": "^7.7 || ^8.0",
+                "pestphp/pest": "^1.21"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Saloon": "Saloon\\Laravel\\Facades\\Saloon"
+                    },
+                    "providers": [
+                        "Saloon\\Laravel\\SaloonServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Saloon\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Carré",
+                    "email": "29132017+Sammyjo20@users.noreply.github.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel plugin for Saloon",
+            "homepage": "https://github.com/saloonphp/laravel-plugin",
+            "keywords": [
+                "api",
+                "api-integrations",
+                "saloon",
+                "sammyjo20",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/saloonphp/laravel-plugin/issues",
+                "source": "https://github.com/saloonphp/laravel-plugin/tree/v2.0.2"
+            },
+            "time": "2023-08-10T17:13:06+00:00"
+        },
+        {
+            "name": "saloonphp/saloon",
+            "version": "v2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saloonphp/saloon.git",
+                "reference": "bee990f9fc24ac3ff6f4453b2878a6bd9859efe4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saloonphp/saloon/zipball/bee990f9fc24ac3ff6f4453b2878a6bd9859efe4",
+                "reference": "bee990f9fc24ac3ff6f4453b2878a6bd9859efe4",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.5",
+                "guzzlehttp/promises": "^1.5 || ^2.0",
+                "php": "^8.1",
+                "psr/http-message": "^1.1 || ^2.0"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "friendsofphp/php-cs-fixer": "^3.5",
+                "illuminate/collections": "^9.39 || ^10.0",
+                "league/flysystem": "^3.0",
+                "pestphp/pest": "^2.2.3",
+                "phpstan/phpstan": "^1.9",
+                "spatie/ray": "^1.33",
+                "symfony/dom-crawler": "^6.0"
+            },
+            "suggest": {
+                "illuminate/collections": "Required for the response collect() method.",
+                "symfony/dom-crawler": "Required for the response dom() method."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Saloon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Carré",
+                    "email": "29132017+Sammyjo20@users.noreply.github.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Build beautiful API integrations and SDKs with Saloon",
+            "homepage": "https://github.com/sammyjo20/saloon",
+            "keywords": [
+                "api",
+                "api-integrations",
+                "saloon",
+                "sammyjo20",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/saloonphp/saloon/issues",
+                "source": "https://github.com/saloonphp/saloon/tree/v2.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sammyjo20",
+                    "type": "github"
+                },
+                {
+                    "url": "https://ko-fi.com/sammyjo20",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2023-08-10T16:47:43+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "38fe533e93f86a1b2fb1000bf7df09c4748e6458"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/38fe533e93f86a1b2fb1000bf7df09c4748e6458",
+                "reference": "38fe533e93f86a1b2fb1000bf7df09c4748e6458",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-09T14:08:04+00:00"
+        },
+        {
+            "name": "spatie/laravel-settings",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-settings.git",
+                "reference": "4ac597ffbb599a46032498309251b7a24346cb66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-settings/zipball/4ac597ffbb599a46032498309251b7a24346cb66",
+                "reference": "4ac597ffbb599a46032498309251b7a24346cb66",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/database": "^8.73|^9.0|^10.0",
+                "php": "^7.4|^8.0",
+                "phpdocumentor/type-resolver": "^1.5",
+                "spatie/temporary-directory": "^1.3|^2.0"
+            },
+            "require-dev": {
+                "ext-redis": "*",
+                "mockery/mockery": "^1.4",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^6.23|^7.0|^8.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.2",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "spatie/laravel-data": "^1.0.0|^2.0.0",
+                "spatie/pest-plugin-snapshots": "^1.1",
+                "spatie/phpunit-snapshot-assertions": "^4.2",
+                "spatie/ray": "^1.36"
+            },
+            "suggest": {
+                "spatie/data-transfer-object": "Allows for DTO casting to settings. (deprecated)"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\LaravelSettings\\LaravelSettingsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelSettings\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ruben Van Assche",
+                    "email": "ruben@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Store your application settings",
+            "homepage": "https://github.com/spatie/laravel-settings",
+            "keywords": [
+                "laravel-settings",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-settings/issues",
+                "source": "https://github.com/spatie/laravel-settings/tree/3.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-07-05T12:22:20+00:00"
+        },
+        {
+            "name": "spatie/temporary-directory",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/temporary-directory.git",
+                "reference": "0c804873f6b4042aa8836839dca683c7d0f71831"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/0c804873f6b4042aa8836839dca683c7d0f71831",
+                "reference": "0c804873f6b4042aa8836839dca683c7d0f71831",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TemporaryDirectory\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily create, use and destroy temporary directories",
+            "homepage": "https://github.com/spatie/temporary-directory",
+            "keywords": [
+                "php",
+                "spatie",
+                "temporary-directory"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/temporary-directory/issues",
+                "source": "https://github.com/spatie/temporary-directory/tree/2.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-28T07:47:42+00:00"
         },
         {
             "name": "symfony/console",
@@ -5657,53 +6734,6 @@
             "time": "2023-08-08T13:23:59+00:00"
         },
         {
-            "name": "doctrine/deprecations",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "612a3ee5ab0d5dd97b7cf3874a6efe24325efac3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
-                "reference": "612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^9",
-                "phpstan/phpstan": "1.4.10 || 1.10.15",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
-                "psalm/plugin-phpunit": "0.18.4",
-                "psr/log": "^1 || ^2 || ^3",
-                "vimeo/psalm": "4.30.0 || 5.12.0"
-            },
-            "suggest": {
-                "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Deprecations\\": "lib/Doctrine/Deprecations"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
-            "homepage": "https://www.doctrine-project.org/",
-            "support": {
-                "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/v1.1.1"
-            },
-            "time": "2023-06-03T09:27:29+00:00"
-        },
-        {
             "name": "fakerphp/faker",
             "version": "v1.23.0",
             "source": {
@@ -6797,59 +7827,6 @@
             "time": "2022-02-21T01:04:05+00:00"
         },
         {
-            "name": "phpdocumentor/reflection-common",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/1d01c49d4ed62f25aa84a747ad35d5a16924662b",
-                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2 || ^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "phpDocumentor\\Reflection\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jaap van Otterdijk",
-                    "email": "opensource@ijaap.nl"
-                }
-            ],
-            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
-            "homepage": "http://www.phpdoc.org",
-            "keywords": [
-                "FQSEN",
-                "phpDocumentor",
-                "phpdoc",
-                "reflection",
-                "static analysis"
-            ],
-            "support": {
-                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
-            },
-            "time": "2020-06-27T09:03:43+00:00"
-        },
-        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "5.3.0",
             "source": {
@@ -6905,111 +7882,6 @@
                 "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.3.0"
             },
             "time": "2021-10-19T17:43:47+00:00"
-        },
-        {
-            "name": "phpdocumentor/type-resolver",
-            "version": "1.7.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419",
-                "reference": "3219c6ee25c9ea71e3d9bbaf39c67c9ebd499419",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/deprecations": "^1.0",
-                "php": "^7.4 || ^8.0",
-                "phpdocumentor/reflection-common": "^2.0",
-                "phpstan/phpdoc-parser": "^1.13"
-            },
-            "require-dev": {
-                "ext-tokenizer": "*",
-                "phpbench/phpbench": "^1.2",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^1.8",
-                "phpstan/phpstan-phpunit": "^1.1",
-                "phpunit/phpunit": "^9.5",
-                "rector/rector": "^0.13.9",
-                "vimeo/psalm": "^4.25"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "phpDocumentor\\Reflection\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike van Riel",
-                    "email": "me@mikevanriel.com"
-                }
-            ],
-            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "support": {
-                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.3"
-            },
-            "time": "2023-08-12T11:01:26+00:00"
-        },
-        {
-            "name": "phpstan/phpdoc-parser",
-            "version": "1.23.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
-                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2 || ^8.0"
-            },
-            "require-dev": {
-                "doctrine/annotations": "^2.0",
-                "nikic/php-parser": "^4.15",
-                "php-parallel-lint/php-parallel-lint": "^1.2",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^1.5",
-                "phpstan/phpstan-phpunit": "^1.1",
-                "phpstan/phpstan-strict-rules": "^1.0",
-                "phpunit/phpunit": "^9.5",
-                "symfony/process": "^5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PHPStan\\PhpDocParser\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "support": {
-                "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.1"
-            },
-            "time": "2023-08-03T16:32:59+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -8834,7 +9706,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "livewire/livewire": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
