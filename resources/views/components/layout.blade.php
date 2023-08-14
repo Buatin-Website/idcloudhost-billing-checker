@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $app_name }}</title>
     @vite('resources/css/app.css')
+    @livewireStyles
 </head>
 <body class="min-h-screen">
 <div class="flex flex-col min-h-screen">
@@ -40,5 +41,6 @@
         </div>
     </footer>
 </div>
+@livewireScripts
 </body>
 </html>
