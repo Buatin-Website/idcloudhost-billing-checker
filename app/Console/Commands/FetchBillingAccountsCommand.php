@@ -6,6 +6,7 @@ use App\Events\AccountThresholdReachedEvent;
 use App\Http\Integrations\Idcloudhost\Requests\GetBillingAccountList;
 use App\Settings\GeneralSettings;
 use Illuminate\Console\Command;
+use Symfony\Component\Console\Command\Command as CommandAlias;
 
 class FetchBillingAccountsCommand extends Command
 {
@@ -13,7 +14,7 @@ class FetchBillingAccountsCommand extends Command
 
     protected $description = 'Fetch billing accounts';
 
-    public function handle(): void
+    public function handle(): int
     {
         $generalSettings = new GeneralSettings();
 
@@ -25,6 +26,10 @@ class FetchBillingAccountsCommand extends Command
 
         // account balance reached threshold
         $account_under_threshold = $account_lists->filter(fn($account) => $account['precalc_ongoing'] < $generalSettings->balance_threshold);
-        AccountThresholdReachedEvent::dispatch($account_under_threshold->toArray());
+        if ($account_under_threshold->count()) {
+            AccountThresholdReachedEvent::dispatch($account_under_threshold->toArray());
+        }
+
+        return CommandAlias::SUCCESS;
     }
 }
