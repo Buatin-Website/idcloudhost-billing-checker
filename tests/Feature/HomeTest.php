@@ -7,21 +7,6 @@ use Saloon\Http\Faking\MockResponse;
 use function Pest\Laravel\get;
 use function Pest\Livewire\livewire;
 
-dataset('api_response', fn() => [
-    yield fn() => [
-        [
-            'title' => fake()->name,
-            'email' => fake()->email,
-            'precalc_ongoing' => 100000,
-        ],
-        [
-            'title' => fake()->name,
-            'email' => fake()->email,
-            'precalc_ongoing' => 100000,
-        ],
-    ]
-]);
-
 test('can\'t access home page without setup api key', function () {
     $response = get(route('home'));
 
