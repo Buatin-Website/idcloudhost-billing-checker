@@ -22,7 +22,9 @@ class BillingChecker extends Component
 
         // account balance reached threshold
         $account_under_threshold = $account_lists->filter(fn($account) => $account['precalc_ongoing'] < $generalSettings->balance_threshold);
-        AccountThresholdReachedEvent::dispatch($account_under_threshold->toArray());
+        if ($account_under_threshold->count()) {
+            AccountThresholdReachedEvent::dispatch($account_under_threshold->toArray());
+        }
     }
 
     public function fetchBillingAccounts(): void
